@@ -9,6 +9,7 @@
         Title="MainWindow" Height="600" Width="920"
         WindowStyle="None"
         ResizeMode="NoResize"
+        FontFamily="/Fonts/#Poppins"
         Background="Transparent"
         AllowsTransparency="True">
 
@@ -35,11 +36,12 @@
 
 
             <TextBlock Text="Pltrades"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Left"
-                   Foreground="White"
-                   FontSize="22"
-                       Margin="20 0 0 0"/>
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Foreground="White"
+                       FontSize="22"
+                       Margin="20 0 0 0"
+                       />
 
             <StackPanel Grid.Row="1">
                 
@@ -48,21 +50,25 @@
                     Content="Traders"
                     Foreground="White"
                     FontSize="14"
-                    Style="{StaticResource MenuButtonTheme}"/>
+                    Style="{StaticResource MenuButtonTheme}"
+                    IsChecked="True"
+                    Command="{Binding HomeViewComamnd}"/>
 
                 <RadioButton 
                     Height="50"
                     Content="Trade Entries"
                     Foreground="White"
                     FontSize="14"
-                    Style="{StaticResource MenuButtonTheme}"/>
+                    Style="{StaticResource MenuButtonTheme}"
+                    Command="{Binding DiscoveryViewCommand}"/>
 
                 <RadioButton 
                     Height="50"
                     Content="Strategies/Rules"
                     Foreground="White"
                     FontSize="14"
-                    Style="{StaticResource MenuButtonTheme}"/>
+                    Style="{StaticResource MenuButtonTheme}"
+                    />
                  
             </StackPanel>
 
